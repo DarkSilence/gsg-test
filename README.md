@@ -174,7 +174,7 @@ Accept: application/json
     }
    ```
    ``total_amount`` is required.
-    Method return JSON
+    Method returns JSON
     ```
     {
         "data": {
