@@ -31,7 +31,7 @@ class VoucherTest extends TestCase
         $response
             ->assertStatus(201)
             ->assertJson(fn (AssertableJson $json) =>
-                $json->where('data.id', 1)
+                $json->has('data.id')
                      ->where('data.unique_code', $data['unique_code'])
                      ->where('data.amount', $data['amount'])
                      ->where('data.expired_dt', $expired_dt->jsonSerialize())
